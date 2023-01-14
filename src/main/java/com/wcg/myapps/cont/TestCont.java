@@ -18,4 +18,12 @@ public class TestCont {
         String strDate = dateFormat.format(date);
         return "WELCOME" + strDate;
     }
+
+    @GetMapping("/test")
+    public String test(){
+        Date date = Calendar.getInstance().getTime();
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
+        String strDate = dateFormat.format(date);
+        return "TEST" + strDate;
+    }
 }
