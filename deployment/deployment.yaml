@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: myapps
-        image: wcg0112/myapps:0.1
+        image: wcg0112/myapps:latest
         ports:
         - containerPort: 8080
         imagePullPolicy: Always
