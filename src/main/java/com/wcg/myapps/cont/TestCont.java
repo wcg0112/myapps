@@ -24,6 +24,6 @@ public class TestCont {
         Date date = Calendar.getInstance().getTime();
         DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
         String strDate = dateFormat.format(date);
-        return "TEST" + strDate;
+        return "TEST!!!!!!" + strDate;
     }
 }
