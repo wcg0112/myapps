@@ -11,7 +11,7 @@ import java.util.Date;
 @RestController
 public class TestCont {
 
-    @GetMapping("/welcome")
+    @GetMapping("/api/welcome")
     public String welcome(){
         Date date = Calendar.getInstance().getTime();
         DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
@@ -19,7 +19,7 @@ public class TestCont {
         return "WELCOME" + strDate;
     }
 
-    @GetMapping("/test")
+    @GetMapping("/api/test")
     public String test(){
         Date date = Calendar.getInstance().getTime();
         DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");

@@ -13,7 +13,7 @@ import java.util.logging.Logger;
 public class FriendCont {
     @Autowired
     FriendsDAO fdao;
-    @GetMapping("/getfriend")
+    @GetMapping("/api/getfriend")
     public List<FriendEntity> getFriends() {
         List<FriendEntity> fList = fdao.friendList();
         Logger logger = Logger.getLogger("FriendCont");
@@ -21,7 +21,7 @@ public class FriendCont {
         return fList;
     }
 
-    @GetMapping("/insertfriend")
+    @GetMapping("/api/insertfriend")
     public String insertFriends() {
         Long maxId = fdao.selectMaxId();
         Logger logger = Logger.getLogger("FriendCont");
