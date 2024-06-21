@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: myapps
-        image: wcg0112/myapps:latest
+        image: wcg0112/myapps:COMMIT_SHA
         ports:
         - containerPort: 8080
         imagePullPolicy: Always
